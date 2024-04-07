@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "AppApplication",
+            "request": "launch",
+            "mainClass": "com.example.app.AppApplication",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-Main<app>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.Main",
+            "projectName": "app",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=56233 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=app"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-PaymentsApplication<payments>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.payments.PaymentsApplication",
+            "projectName": "payments",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
